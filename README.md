@@ -2,7 +2,7 @@ Dette projekt er en hjemmeside om en fiktiv sportsklub, Aalborg Ultimate Frissbe
 Det er udarbejdet af Steffen Pedersen og Malte Andersen, og har til formål at oversætte teoretiske metoder og diagrammer til et fiktivt praksis eksempel.
 Hjemmesidens formål er at have diverse informationer om klubben og muliggøre tilmelding af nye medlemmer.
 
-**[Projektbeskrivelse](.Dokumenter/Projektbeskrivelse)** - Beskrivelse af AUFK-portalen og dens formål.
+**[Projektbeskrivelse](Dokumenter/Projektbeskrivelse)** - Beskrivelse af AUFK-portalen og dens formål.
 (tilføjes flere senere)
 
 
