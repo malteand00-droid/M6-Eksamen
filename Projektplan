@@ -14,9 +14,9 @@ Yderligere hjælper kanban os også med at skabe et løbende flow, samt lave en 
 2. Udviklingsmiljø og Værktøjer
 For at sikre en ensartet kodebase og nem deling af dokumentation bruger vi følgende:
 
-IDE: Visual Studio Code (med Git-integration).
+Til projektet er der anvendt GitHub (desktop og browser) til repository og Git funktionen i Visual Studio Code, til udarbejdelse af kode.
+Dette er gjort da det var nemmest ift. opgavebeskrivelse og vi allerede har anvendt Visual Studio Code på tidligere semestre.
 
-Versionsstyring: Git (lokalt) og GitHub (cloud).
 
 3. Git Workflow og Samarbejde
 For at imødekomme kravet om parallelisering og minimering af konflikter i vores repository, har vi aftalt følgende workflow:
