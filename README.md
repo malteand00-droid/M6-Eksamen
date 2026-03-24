@@ -3,5 +3,5 @@ Det er udarbejdet af Steffen Pedersen og Malte Andersen, og har til formål at o
 Hjemmesidens formål er at have diverse informationer om klubben og muliggøre tilmelding af nye medlemmer.
 
 **[Projektbeskrivelse](Dokumenter/Projektbeskrivelse)** - Beskrivelse af AUFK-portalen og dens formål.
-**[](Dokumenter/Projektplan)** - beskriver den overordnede strategi og de tekniske metoder, vi anvender for at sikre et effektivt samarbejde og en struktureret udviklingsproces.
-**[](Dokumenter/Rollebeskrivelse)** - Beskriver rollefordelingen i projektet
+**[Projektplan](Dokumenter/Projektplan)** - beskriver den overordnede strategi og de tekniske metoder, vi anvender for at sikre et effektivt samarbejde og en struktureret udviklingsproces.
+**[Rollebeskrivelse](Dokumenter/Rollebeskrivelse)** - Beskriver rollefordelingen i projektet
