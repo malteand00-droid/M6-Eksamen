@@ -1,0 +1,99 @@
+/* --- 1. GLOBAL RESET --- */
+/* Sørger for at alle browsere starter ens uden mærkelige mellemrum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif; /* Midlertidig font indtil style.css tager over */
+    line-height: 1.6;
+    color: #333;
+}
+
+/* --- 2. CONTAINEREN (Vigtigst!) --- */
+/* Holder alt indhold samlet på midten, så det ikke klistrer til skærmkanten */
+.container {
+    max-width: 1200px; /* Bredden på dit design-hus */
+    margin: 0 auto;    /* Centrerer kassen på midten af skærmen */
+    padding: 0 20px;   /* Lidt luft i siderne på mobil */
+}
+
+/* --- 3. HEADER / MENU LAYOUT --- */
+.main-header .container {
+    display: flex;             /* MAGI: Stiller logo og nav ved siden af hinanden */
+    justify-content: space-between; /* Skubber logo til venstre, nav til højre */
+    align-items: center;       /* Sørger for de er lige høje i midten */
+    padding: 15px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Mellemrum mellem logo-ikon og tekst */
+}
+
+nav ul {
+    display: flex;     /* Stiller menupunkterne på en række */
+    gap: 25px;         /* Mellemrum mellem Forside, Om os, osv. */
+    list-style: none;  /* Fjerner de sorte prikker */
+}
+
+/* --- 4. HERO (TOPBILLEDE) LAYOUT --- */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 80vh; /* Fylder 80% af skærmens højde */
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 800px; /* Holder teksten samlet på midten */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* --- 5. PAGE CONTENT LAYOUT --- */
+.page-content {
+    padding: 80px 0; /* Giver luft over og under indholdet */
+}
+
+/* --- 6. CTA (BLÅ BOKS) LAYOUT --- */
+.cta-section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* --- 7. FOOTER LAYOUT --- */
+.main-footer {
+    padding: 80px 0 20px 0;
+}
+
+.footer-grid {
+    display: flex;             /* Stiller de 3 kolonner ved siden af hinanden */
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.footer-col {
+    flex: 1; /* Gør at de 3 kolonner deler pladsen ligeligt */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1); /* En tynd streg over bunden */
+}
