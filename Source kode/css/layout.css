@@ -97,3 +97,58 @@ nav ul {
     padding-top: 20px;
     border-top: 1px solid rgba(255,255,255,0.1); /* En tynd streg over bunden */
 }
+
+/* --- NYE SEKTIONER PÅ FORSIDEN --- */
+
+.page-section {
+    padding: 80px 0; /* Standard luft i top og bund af alle sektioner */
+}
+
+/* Feature Grid (Hvorfor vælge os) */
+.feature-grid {
+    display: flex;
+    justify-content: center; /* Sørger for kasserne er centreret */
+    align-items: stretch;    /* Gør kasserne lige høje */
+    gap: 30px;
+    max-width: 1000px;       /* Holder det lidt tættere sammen for et flot look */
+    margin: 0 auto;          /* Centrerer selve grid'et på siden */
+}
+
+/* Sørg også for at kortene centrerer deres tekst */
+/* Sørg for at kortene centrerer deres ikon og tekst perfekt */
+.feature-card {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centrerer indholdet vandret */
+    text-align: center;   /* Centrerer selve teksten */
+}
+
+/* About Teaser (Tekst til venstre, billede til højre) */
+.about-flex {
+    display: flex;
+    align-items: center; /* Centrerer dem lodret */
+    gap: 60px;
+}
+
+.about-text, .about-image {
+    flex: 1; /* Deler pladsen 50/50 */
+}
+
+.about-image img {
+    width: 100%; /* Sørger for billedet ikke bryder ud af sin kasse */
+    display: block;
+}
+
+/* Event Grid (Kommende events) */
+.event-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.event-card {
+    flex: 1;
+    padding: 30px;
+}
