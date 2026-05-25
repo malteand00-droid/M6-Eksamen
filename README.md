@@ -8,4 +8,6 @@ Hjemmesidens formål er at have diverse informationer om klubben og muliggøre t
 
 **[Rollebeskrivelse](Dokumenter/Rollebeskrivelse)** - Beskriver rollefordelingen i projektet
 
-**[Design](Dokumenter/Design)** - Indeholder Figma mockup, samt UML-diagrammer
+**[Retrospective](Dokumenter/Retrospective)** - Indehodler reflekterende tanker omkring hele forløbet.
+
+**[Design](Design)** - Indeholder Figma mockup, samt UML-diagrammer.
