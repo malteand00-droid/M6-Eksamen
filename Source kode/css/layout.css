@@ -152,3 +152,43 @@ nav ul {
     flex: 1;
     padding: 30px;
 }
+/* --- LAYOUT TIL "OM OS" SIDEN --- */
+
+/* Centrerer og gør mission-teksten smal */
+.mission-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Gør "Vores Værdier" til 4 kasser ved siden af hinanden */
+.values-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Sørger for Historie-sektionen er lidt smallere */
+.history-container {
+    max-width: 600px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Luft mellem årene */
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center; /* Centrerer årstallet og teksten ud for hinanden */
+    gap: 30px;
+}
+
+/* Statistik i bunden (4 kasser) */
+.stats-grid {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 0;
+}
