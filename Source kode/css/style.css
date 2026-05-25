@@ -435,7 +435,6 @@ section.events h2 {
 /* --- TRÆNING SIDE DESIGN --- */
 
 .hero-traening {
-    /* Her kan du bruge din PNG fil ligesom sidst */
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/traeningforside.png');
 }
 
