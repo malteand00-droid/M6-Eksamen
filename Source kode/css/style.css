@@ -200,7 +200,12 @@ nav a:hover {
     /* Her kan du indsætte billedet af græsbanen fra Figma senere */
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1558365849-6ebd8b0454b2?q=80&w=2068&auto=format&fit=crop');
 }
-
+.subpage-hero-hold {
+    min-height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/holdforside.png');
+    background-size: cover;
+    background-position: center;
+}
 /* De hvide "Vores Værdier" kasser - Nu som tydelige Figma-bokse */
 .value-card {
     background-color: #FFFFFF;
@@ -380,4 +385,50 @@ section.events h2 {
     font-weight: 700;
     text-align: center;
     margin-bottom: 50px;
+}
+
+/* --- HOLD SIDE DESIGN --- */
+
+.badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.badge-comp { background-color: #E0E7FF; color: #1D61FF; } /* Blå */
+.badge-beg { background-color: #DCFCE7; color: #166534; }  /* Grøn */
+.badge-u20 { background-color: #FEF3C7; color: #92400E; }  /* Gul/Orange */
+
+.team-info h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.training-times {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.training-times strong {
+    display: block;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+.stat-number-small {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 15px 0 5px 0;
+    color: #111;
+}
+
+/* Specifikt topbillede til Hold-siden */
+.hero-hold {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/holdforside.png');
 }
