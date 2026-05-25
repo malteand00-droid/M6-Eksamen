@@ -152,3 +152,104 @@ nav ul {
     flex: 1;
     padding: 30px;
 }
+/* --- LAYOUT TIL "OM OS" SIDEN --- */
+
+/* Centrerer og gør mission-teksten smal */
+.mission-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Gør "Vores Værdier" til 4 kasser ved siden af hinanden */
+.values-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Sørger for Historie-sektionen er lidt smallere */
+.history-container {
+    max-width: 600px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Luft mellem årene */
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center; /* Centrerer årstallet og teksten ud for hinanden */
+    gap: 30px;
+}
+
+/* Statistik i bunden (4 kasser) */
+.stats-grid {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* --- HOLD SIDE LAYOUT --- */
+
+.team-showcase {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+/* Magien der vender hver anden række om */
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.team-info, .team-img-wrapper {
+    flex: 1;
+}
+
+.team-img-wrapper img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.stat-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    flex: 1;
+    border: 1px solid #eee;
+}
+/* --- TRÆNING SIDE LAYOUT --- */
+
+.training-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* To kolonner */
+    gap: 30px;
+}
+
+.info-cta-flex {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.prep-list, .blue-cta-box {
+    flex: 1;
+}
+
+.map-placeholder {
+    background-color: #E5E7EB;
+    height: 350px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
