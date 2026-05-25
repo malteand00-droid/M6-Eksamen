@@ -225,3 +225,31 @@ nav ul {
     flex: 1;
     border: 1px solid #eee;
 }
+/* --- TRÆNING SIDE LAYOUT --- */
+
+.training-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* To kolonner */
+    gap: 30px;
+}
+
+.info-cta-flex {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.prep-list, .blue-cta-box {
+    flex: 1;
+}
+
+.map-placeholder {
+    background-color: #E5E7EB;
+    height: 350px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

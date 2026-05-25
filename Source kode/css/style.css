@@ -432,3 +432,87 @@ section.events h2 {
 .hero-hold {
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/holdforside.png');
 }
+/* --- TRÆNING SIDE DESIGN --- */
+
+.hero-traening {
+    /* Her kan du bruge din PNG fil ligesom sidst */
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/traeningforside.png');
+}
+
+.training-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+.training-card.border-blue {
+    border: 2px solid var(--primary-blue);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-meta {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-meta i {
+    color: var(--primary-blue);
+    margin-right: 5px;
+}
+
+/* Checklist styling */
+.prep-list ul {
+    list-style: none;
+    margin-top: 25px;
+}
+
+.prep-list li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.prep-list i {
+    color: var(--primary-blue);
+    font-size: 1.4rem;
+}
+
+/* Den blå boks */
+.blue-cta-box {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(29, 97, 255, 0.2);
+}
+
+.blue-cta-box h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.contact-mini {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Kort placeholder */
+.map-placeholder i {
+    font-size: 3rem;
+    color: #9CA3AF;
+    margin-bottom: 15px;
+}
