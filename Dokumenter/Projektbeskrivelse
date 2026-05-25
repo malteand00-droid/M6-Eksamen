@@ -1,24 +1,19 @@
-# Projektbeskrivelse: Aalborg Ultimate Frisbee Klub (AUFK)
+Projektbeskrivelse Aalborg Ultimate Frisbee Klub
 
-Dette dokument beskriver produktet og de tekniske rammer for udviklingen af webportalen til AUFK.
+Dette dokument beskriver hjemmesider og de tekniske rammer for udviklingen af websiden.
 
-## 1. Produktets formål
 Formålet med projektet er at udvikle en funktionel og overskuelig hjemmeside til den fiktive sportsklub, Aalborg Ultimate Frisbee Klub. 
-Da projektet tager udgangspunkt i M6-modulet, er det primære fokus at demonstrere en professionel design- og styringsproces gennem samarbejde i et versionsstyret miljø.
+Det primære fokus er at demonstrere en professionel design- og styringsproces gennem samarbejde i et versionsstyret miljø.
 
 Hjemmesiden skal fungere som klubbens ansigt udadtil og give brugere adgang til information om sporten, holdoversigter og indmeldelse.
 
-## 2. Systemets omfang og krav
-For at sikre tilstrækkelig kompleksitet i designprocessen opfylder systemet følgende minimumskrav:
-* **Sider**: Minimum 8 statiske HTML-sider.
-* **Styling**: Minimum 2 CSS-sider for at adskille layout og specifikt design.
-* **Indhold**: Siderne vil dække områder som forside, om klubben, regler for Ultimate, træningstider, medlemskab, nyheder, galleri og kontakt.
+Hjemmesiden består af:
+8 statiske HTML-sider: forside, om klubben, regler for Ultimate, træningstider, medlemskab, nyheder, galleri og kontakt.
+2 CSS-sider for at adskille layout og specifikt design.
 
-## 3. Udviklingsmetode og værktøjer
 Projektet udvikles med fokus på parallelitet og gennemsigtighed i gruppen.
-* **Versionsstyring**: Vi anvender Git og GitHub til lagring af kode og dokumentation.
-* **Samarbejde**: Der arbejdes i branches med efterfølgende Pull Requests og merges for at sikre teknisk kvalitet og undgå konflikter.
-* **Styring**: Opgaverne styres digitalt via et Kanban-board i GitHub Projects, hvilket muliggør en agil tilgang til udviklingen.
+Vi anvender Git og GitHub til lagring af kode og dokumentation.
+Der arbejdes i branches med efterfølgende Pull Requests og merges for at sikre teknisk kvalitet og undgå konflikter.
+Opgaverne styres digitalt via et Kanban-board i GitHub Projects, hvor Roadmap også er en del af.
 
-## 4. Teknisk dokumentation
-Al dokumentation, herunder denne beskrivelse, udarbejdes i Markdown-format. Dette sikrer, at dokumentationen er tæt koblet til koden og kan versionsstyres på lige fod med systemets øvrige filer.
+Al dokumentation, herunder denne beskrivelse, udarbejdes i Markdown-format.
