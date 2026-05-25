@@ -135,3 +135,50 @@ nav a:hover {
 .footer-bottom {
     font-size: 0.85rem;
 }
+
+/* --- KOMMENDE EVENTS (De hvide kort med grå kant) --- */
+
+.event-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB; /* Den præcise lysegrå kant fra Figma */
+    border-radius: 8px;        /* Runde hjørner på kassen */
+    padding: 30px;             /* Giver god luft indeni boksen */
+    text-align: left;          /* Sørger for at teksten starter ude til venstre */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02); /* En meget svag skygge under kortet */
+    transition: 0.3s;          /* Gør kassen klar til hover-effekten */
+}
+
+/* Lidt ekstra "lir": Boksen løfter sig lidt, når man holder musen over */
+.event-card:hover {
+    box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+    transform: translateY(-3px);
+}
+
+/* Datoen i toppen af kortet */
+.event-date {
+    display: block;
+    color: var(--primary-blue); /* Din blå AUFK-farve */
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+/* Titlen på eventet */
+.event-card h3 {
+    color: #111111;            /* Mørk farve for god kontrast */
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+/* Brødteksten i kortet */
+.event-card p {
+    color: #6B7280;            /* Flot grå farve til teksten */
+    font-size: 0.95rem;
+}
+
+/* Centrerer store overskrifter på forsiden */
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
