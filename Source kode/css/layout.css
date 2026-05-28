@@ -377,3 +377,337 @@ table {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
+
+/* ===== RESPONSIVE / MOBIL-VENLIG ===== */
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Hamburger menu button */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Tablet og mindre (768px og under) */
+@media (max-width: 768px) {
+    /* Container - mindre padding på mobil */
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Header - logo og nav */
+    .main-header .container {
+        flex-direction: row;
+        gap: 15px;
+        padding: 12px 15px;
+        position: relative;
+    }
+
+    /* Show hamburger menu on mobile */
+    .menu-toggle {
+        display: flex;
+        margin-left: auto;
+    }
+
+    /* Navigation - skjult på mobil, vises når menu-active */
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1D61FF;
+        padding: 20px 15px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    nav.menu-active {
+        display: flex;
+    }
+
+    /* Navigation -menupunkter på flere linjer */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+        padding: 10px 0;
+        display: block;
+    }
+
+    /* Hero - mindre højde og mindre padding */
+    .hero {
+        min-height: 50vh;
+        padding: 50px 0;
+    }
+
+    .hero-content {
+        gap: 15px;
+    }
+
+    /* Feature Grid - stables på mobil */
+    .feature-grid {
+        flex-direction: column;
+        gap: 20px;
+        max-width: 100%;
+    }
+
+    .feature-card {
+        padding: 30px 20px;
+    }
+
+    /* About Teaser - logo og tekst under hinanden */
+    .about-flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-text, .about-image {
+        flex: none;
+        width: 100%;
+    }
+
+    /* Event Grid - en kolonne */
+    .event-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .event-card {
+        padding: 20px;
+    }
+
+    /* Om Os siden - værdier under hinanden */
+    .values-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Timeline - mindre luft */
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    /* Stats Grid - to kolonner på tablet, en på mobil */
+    .stats-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Hold siden - team showcase under hinanden */
+    .team-showcase {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .row-reverse {
+        flex-direction: column;
+    }
+
+    .team-info, .team-img-wrapper {
+        flex: none;
+        width: 100%;
+    }
+
+    /* Træning - training-grid til en kolonne */
+    .training-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Info CTA Flex - under hinanden */
+    .info-cta-flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .prep-list, .blue-cta-box {
+        flex: none;
+        width: 100%;
+    }
+
+    /* Map placeholder - mindre højde */
+    .map-placeholder {
+        height: 250px;
+    }
+
+    /* Page sections - mindre padding */
+    .page-section {
+        padding: 50px 0;
+    }
+
+    .cta-section {
+        padding: 50px 0;
+    }
+
+    /* Footer - mindre padding */
+    .main-footer {
+        padding: 50px 0 20px 0;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Knapper - touch-venlige */
+    .btn-main, .btn-cta {
+        min-height: 44px;
+        min-width: 44px;
+        padding: 12px 25px;
+    }
+
+    nav a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    /* Match grid */
+    .match-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* News grid */
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Pricing grid */
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Steps grid */
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact info grid */
+    .contact-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact main grid */
+    .contact-main-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Quick links grid */
+    .quick-links-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Småt mobil (480px og under) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    .main-header .container {
+        padding: 12px 12px;
+    }
+
+    /* Mindre gap i header */
+    nav ul {
+        gap: 8px;
+    }
+
+    /* Hero - meget mindre på lille skærm */
+    .hero {
+        min-height: 40vh;
+        padding: 30px 0;
+    }
+
+    .hero-content {
+        gap: 12px;
+    }
+
+    /* Feature cards - mindre padding */
+    .feature-card {
+        padding: 20px 15px;
+    }
+
+    /* About Flex - meget tætere */
+    .about-flex {
+        gap: 20px;
+    }
+
+    /* Timeline - helt min */
+    .timeline-item {
+        gap: 8px;
+    }
+
+    /* Page sections - minimalt padding */
+    .page-section {
+        padding: 30px 0;
+    }
+
+    .cta-section {
+        padding: 30px 0;
+    }
+
+    /* Footer - meget lille padding */
+    .main-footer {
+        padding: 30px 0 15px 0;
+    }
+
+    .footer-grid {
+        gap: 15px;
+    }
+
+    /* Map placeholder */
+    .map-placeholder {
+        height: 200px;
+    }
+
+    /* Team showcase */
+    .team-showcase {
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Info CTA - mindre gap */
+    .info-cta-flex {
+        gap: 20px;
+    }
+
+    /* Stat card - mindre padding */
+    .stat-card {
+        padding: 20px;
+    }
+}

@@ -16,7 +16,12 @@
                 <img src="img/logo.png" alt="AUFK Logo">
                 <span>Aalborg Ultimate</span>
             </div>
-            <nav>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="mobile-menu">
                 <ul>
                     <li><a href="index.html">Forside</a></li>
                     <li><a href="om-os.html">Om Klubben</a></li>
@@ -25,7 +30,7 @@
                     <li><a href="kampe.html">Kampe</a></li>
                     <li><a href="nyheder.html">Nyheder</a></li>
                     <li><a href="bliv-medlem.html">Bliv Medlem</a></li>
-                    <li><a href="kontakt-os.html">Kontakt</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
@@ -228,6 +233,22 @@
             <p>&copy; 2026 Aalborg Ultimate Frisbee Klub. Alle rettigheder forbeholdes.</p>
         </div>
     </footer>
+
+</body>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('menu-active');
+        }
+
+        const menuLinks = document.querySelectorAll('#mobile-menu a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.remove('menu-active');
+            });
+        });
+    </script>
 
 </body>
 </html>

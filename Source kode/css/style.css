@@ -202,6 +202,7 @@ nav a:hover {
 }
 .subpage-hero {
     min-height: 50vh;
+    background: linear-gradient(135deg, #1D61FF 0%, #0044CC 100%);
     background-size: cover;
     background-position: center;
 }
@@ -440,7 +441,7 @@ section.events h2 {
 /* --- TRÆNING SIDE DESIGN --- */
 
 .hero-traening {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/traeningforside.png');
+    background: linear-gradient(135deg, #1D61FF 0%, #0044CC 100%);
 }
 
 .training-card {
@@ -519,6 +520,322 @@ section.events h2 {
     font-size: 3rem;
     color: #9CA3AF;
     margin-bottom: 15px;
+}
+
+/* ===== RESPONSIVE / MOBIL-VENLIG STYLES ===== */
+
+/* Billeder skal altid passe til skærmen */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Tablet og mindre (768px og under) */
+@media (max-width: 768px) {
+    /* Hero tekst - mindre fontstørrelse */
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Section titler - mindre */
+    .section-title {
+        font-size: 1.4rem;
+        margin-bottom: 30px;
+    }
+
+    /* CTA sektion - mindre overskrift */
+    .cta-section h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Feature cards - mindre padding */
+    .feature-card,
+    .value-card {
+        padding: 20px 15px;
+    }
+
+    .feature-card h3,
+    .value-card h3 {
+        font-size: 1rem;
+    }
+
+    .feature-card p,
+    .value-card p {
+        font-size: 0.85rem;
+    }
+
+    /* Event cards - mindre padding */
+    .event-card {
+        padding: 20px;
+    }
+
+    .event-card h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Hold siden - mindre h2 */
+    .team-info h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Statistik - mindre tal */
+    .stat-number {
+        font-size: 2.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
+    }
+
+    .stat-number-small {
+        font-size: 1.1rem;
+    }
+
+    /* Logo i header - mindre */
+    .logo span {
+        font-size: 1.1rem;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    /* Badge - mindre */
+    .badge {
+        font-size: 0.65rem;
+        padding: 4px 10px;
+    }
+
+    /* Training card - mindre padding */
+    .training-card {
+        padding: 20px;
+    }
+
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Blue CTA box - mindre padding */
+    .blue-cta-box {
+        padding: 30px;
+    }
+
+    .blue-cta-box h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Prep list - mindre tekst */
+    .prep-list li {
+        font-size: 1rem;
+    }
+
+    .prep-list i {
+        font-size: 1.2rem;
+    }
+
+    /* Timeline year - mindre */
+    .timeline-year {
+        font-size: 1rem;
+        min-width: 80px;
+        padding: 8px 15px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1rem;
+    }
+
+    /* Kontakt mini - mindre margin */
+    .contact-mini {
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+
+    /* Knapper - touch-venlige */
+    .btn-main, .btn-cta {
+        min-height: 44px;
+        min-width: 44px;
+        padding: 12px 25px;
+    }
+
+    nav a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    /* Form wrapper */
+    .form-wrapper {
+        padding: 30px 20px;
+    }
+
+    /* Form row */
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Småt mobil (480px og under) */
+@media (max-width: 480px) {
+    /* Hero tekst - meget lille */
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    /* Section titler - små */
+    .section-title {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    /* CTA sektion - lille overskrift */
+    .cta-section h2 {
+        font-size: 1.3rem;
+    }
+
+    /* Feature cards - minimal padding */
+    .feature-card,
+    .value-card {
+        padding: 15px 12px;
+    }
+
+    .feature-card h3,
+    .value-card h3 {
+        font-size: 0.95rem;
+    }
+
+    .feature-card p,
+    .value-card p {
+        font-size: 0.8rem;
+    }
+
+    /* Icon - mindre */
+    .icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    /* Event cards - minimal padding */
+    .event-card {
+        padding: 15px;
+    }
+
+    .event-card h3 {
+        font-size: 1rem;
+    }
+
+    .event-date {
+        font-size: 0.9rem;
+    }
+
+    /* Statistik - meget små tal */
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+    }
+
+    .stat-number-small {
+        font-size: 1rem;
+    }
+
+    /* Hold siden - lille h2 */
+    .team-info h2 {
+        font-size: 1.3rem;
+    }
+
+    /* Logo i header - meget lille */
+    .logo span {
+        font-size: 1rem;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    /* Training card - minimal padding */
+    .training-card {
+        padding: 15px;
+    }
+
+    .card-meta {
+        font-size: 0.85rem;
+    }
+
+    /* Blue CTA box - minimal padding */
+    .blue-cta-box {
+        padding: 20px;
+    }
+
+    .blue-cta-box h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Prep list - lille tekst */
+    .prep-list li {
+        font-size: 0.95rem;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+
+    .prep-list i {
+        font-size: 1rem;
+    }
+
+    /* Timeline year - meget lille */
+    .timeline-year {
+        font-size: 0.9rem;
+        min-width: 70px;
+        padding: 6px 12px;
+    }
+
+    .timeline-content h3 {
+        font-size: 0.95rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.85rem;
+    }
+
+    /* Section heading */
+    section.features h2,
+    section.about-teaser h2,
+    section.events h2 {
+        font-size: 1.4rem;
+    }
+
+    /* Footer - mindre tekst */
+    .main-footer h3 {
+        font-size: 1.1rem;
+    }
+
+    .footer-col p {
+        font-size: 0.9rem;
+    }
+
+    /* Form wrapper */
+    .form-wrapper {
+        padding: 20px 15px;
+    }
+
+    /* News card */
+    .news-card {
+        margin-bottom: 20px;
+    }
 }
 
 /* --- KAMPE SIDE DESIGN --- */
