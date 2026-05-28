@@ -9,7 +9,7 @@ hvilket var svært at forholde sig til med dette projekt i forbindelse med reste
 Kanban muligør at vi i stedet kan forholde os fleksible og samtidig undgå at "låse" os i roller som scrum også lægger op til.
 Ligeledes blev scrumban fravalgt, da det ville være et for stort værktøj til et projekt af denne størelse.
 
-Yderligere hjælper kanban os også med at skabe et løbende flow, samt lave en visuel flaskehals identifkation, hvis en af os sidder fast med en opgave.
+Yderligere hjælper kanban os også med at skabe et løbende flow, samt lave en visuel flaskehals identifikation, hvis en af os sidder fast med en opgave.
 
 2. Udviklingsmiljø og Værktøjer
 For at sikre en ensartet kodebase og nem deling af dokumentation bruger vi følgende:

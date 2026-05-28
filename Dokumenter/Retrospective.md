@@ -3,10 +3,10 @@ Denne fil vil gennemgå hvad der gik godt, hvad der gik mindre godt og hvad vi v
 Hvad gik godt?
 
 GitHub som repository endte med at fungere rigtig godt på trods af en udfordrende opstart med at sætte sig ind i systemet.
-Ingen af os havde tidligere arbejdet med GitHub, så der var en del tilvænding og diverse ting vi skulle sæætte os ind før vi rigtigt kunne komme i gang.
+Ingen af os havde tidligere arbejdet med GitHub, så der var en del tilvænning og diverse ting vi skulle sætte os ind før vi rigtigt kunne komme i gang.
 Da vi lærte at anvende versionsstyring ved hjælp af branches, commits og merges gik det hurtigt, projektet tog fart og frustrationerne blev mindre.
 Med strukturen på plads og lidt erfaring med push og pull begyndte vi også at se værdi i arbejdsformen.
-Vi afprøvede at arbejde både paralelt og asynkront, og har oplevet det som en meget postitiv teknologi, dog måske lidt redundant i og med at vi kun er 2 og ikke et større team.
+Vi afprøvede at arbejde både paralelt og asynkront, og har oplevet det som en meget positiv teknologi, dog måske lidt redundant i og med at vi kun er 2 og ikke et større team.
 Dokumentation og opsætningen af GitHub fungerede også godt til at få os ind i opgavevn igen efter at semesterprojektet tog fokus i april og maj.
 Der var ikke meget tid til at arbejde videre på denne opgave især i maj, hvorfor det begyndte at ligge fjernt i hukkomelsen.
 Alt det dokumentation vi havde udarbejdet på opgaven var derfor meget vigtig til at få os ind i det igen, og vi kunne hurtigt arbejde videre efter at have fået overblikket tilbage.

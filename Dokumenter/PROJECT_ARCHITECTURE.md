@@ -4,45 +4,7 @@ Komplet oversigt over projektets struktur, teknologi og arkitektur.
 
 ---
 
-##  MAPPESTRUKTUR
-
-```
-M6-Eksamen/
-├── README.md                    # Projektbeskrivelse
-│
-├── Design/                      # Design filer
-│   ├── Figma/
-│   │   └── M6.fig               # Design fil
-│   └── UML/                     # UML diagrammer
-│
-├── Dokumenter/                  # Projekt dokumentation
-│   ├── Projektbeskrivelse
-│   ├── Projektplan
-│   ├── Retrospective
-│   ├── Rollebeskrivelse
-│   └── PROJECT_ARCHITECTURE.md  # Denne fil (arkitektur guide)
-│
-└── Source kode/                 # Alle kode filer
-    ├── index.html               # Forside
-    ├── om-os.html               # Om klubben
-    ├── hold.html                # Teams/Hold
-    ├── traening.html            # Training schedule
-    ├── kampe.html               # Matches/Kampe
-    ├── nyheder.html             # News/Nyheder
-    ├── bliv-medlem.html         # Membership
-    ├── kontakt.html             # Contact form
-    │
-    ├── css/                     # Stylesheet filer
-    │   ├── layout.css           # Layout & struktur
-    │   └── style.css            # Styling & komponenter
-    │
-    └── img/                     # Billeder & assets
-        ├── logo.png
-        ├── icon-user.png
-        ├── icon-calendar.png
-        ├── icon-trophy.png
-        └── [andre billeder]
-```
+Se [README.md](README.md) for mappestruktur.
 
 ---
 
@@ -164,33 +126,6 @@ Alle styles starter for mobil, så tilføjes desktop styles via media queries.
 - `.value-card` - Value kort
 - `.section-title` - Sektion overskrift
 - `.cta-section` - Call-to-action sektion
-
----
-
-##  JAVASCRIPT
-
-### toggleMenu() Function
-```javascript
-function toggleMenu() {
-    const menu = document.getElementById('mobile-menu');
-    menu.classList.toggle('menu-active');
-}
-```
-- Toggles `.menu-active` class på nav elementet
-- Gør mobil menu synlig/usynlig
-- Findes i alle 8 HTML filer
-
-### Auto-Close Menu
-```javascript
-const menuLinks = document.querySelectorAll('#mobile-menu a');
-menuLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        document.getElementById('mobile-menu').classList.remove('menu-active');
-    });
-});
-```
-- Lukker menu når link klikkes
-- Gør navigation bedre på mobil
 
 ---
 

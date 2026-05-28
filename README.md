@@ -60,7 +60,7 @@ M6-Eksamen/
 
 ### Features
 - ✅ Responsive design (mobil, tablet, desktop)
-- ✅ Hamburger menu (mobil)
+- ✅ CSS-baseret menu toggle (ingen JavaScript)
 - ✅ Professional styling
 - ✅ Accessibility-ready
 - ✅ Semantic HTML
@@ -71,7 +71,6 @@ M6-Eksamen/
 - **HTML5** - Semantisk markup
 - **CSS3** - Mobile-first, flexbox, variabler
 - **Git** - Versionsstyring
-- **Kanban** - Projekt styring (GitHub Projects)
 
 ## 🚀 Kom i Gang
 
