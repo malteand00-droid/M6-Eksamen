@@ -4,13 +4,11 @@ Komplet oversigt over projektets struktur, teknologi og arkitektur.
 
 ---
 
-## 📁 MAPPESTRUKTUR
+##  MAPPESTRUKTUR
 
 ```
 M6-Eksamen/
 ├── README.md                    # Projektbeskrivelse
-├── CODING_STANDARDS.md          # Best practices guide
-├── PROJECT_ARCHITECTURE.md      # Denne fil (arkitektur guide)
 │
 ├── Design/                      # Design filer
 │   ├── Figma/
@@ -21,7 +19,8 @@ M6-Eksamen/
 │   ├── Projektbeskrivelse
 │   ├── Projektplan
 │   ├── Retrospective
-│   └── Rollebeskrivelse
+│   ├── Rollebeskrivelse
+│   └── PROJECT_ARCHITECTURE.md  # Denne fil (arkitektur guide)
 │
 └── Source kode/                 # Alle kode filer
     ├── index.html               # Forside
@@ -47,7 +46,7 @@ M6-Eksamen/
 
 ---
 
-## 🎯 TEKNOLOGI STACK
+##  TEKNOLOGI STACK
 
 ### HTML5
 - **Semantic Markup**: `<header>`, `<main>`, `<section>`, `<footer>`
@@ -60,11 +59,7 @@ M6-Eksamen/
 - **CSS Variables**: For tema-farver
 - **Mobile-First**: Base styles for mobil, media queries for desktop
 - **Media Queries**: 768px (tablet), 480px (mobil)
-
-### Vanilla JavaScript
-- **No Frameworks**: Kun plain JavaScript
-- **DOM Manipulation**: Hamburger menu toggle
-- **Event Listeners**: Click events for menu
+- **CSS Checkbox Hack**: Menu toggle uden JavaScript
 
 ### Color System
 ```
@@ -77,7 +72,7 @@ Dark Text:  #333333
 
 ---
 
-## 📱 RESPONSIVE BREAKPOINTS
+##  RESPONSIVE BREAKPOINTS
 
 ### Mobile-First Approach
 Alle styles starter for mobil, så tilføjes desktop styles via media queries.
@@ -104,89 +99,7 @@ Alle styles starter for mobil, så tilføjes desktop styles via media queries.
 
 ---
 
-## 🧩 KOMPONENTER
-
-### Layout Components
-
-#### Header/Navigation
-- Logo + tekst
-- Horizontal nav på desktop
-- Hamburger menu på mobil (< 768px)
-- Dropdown nav på mobil med position absolute
-
-#### Hero Section
-```html
-<section class="hero">
-    <div class="container hero-content">
-        <h1>...</h1>
-        <p>...</p>
-        <a href="#" class="btn-main">Button</a>
-    </div>
-</section>
-```
-
-#### Container Pattern
-```css
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-```
-Bruges rundt omkring alt indhold for konsistent max-width og padding.
-
-### Content Components
-
-#### Feature Card
-```html
-<div class="feature-card">
-    <img class="icon" src="..." alt="...">
-    <h3>Title</h3>
-    <p>Description</p>
-</div>
-```
-Bruges for 3-kolonne "Hvorfor vælge os" sektion.
-
-#### Event Card
-```html
-<div class="event-card">
-    <span class="event-date">Dato</span>
-    <h3>Titel</h3>
-    <p>Beskrivelse</p>
-</div>
-```
-Bruges for events, nyheder, kampe osv.
-
-#### Value Card
-```html
-<div class="value-card">
-    <h3>Værdi</h3>
-    <p>Beskrivelse</p>
-</div>
-```
-Bruges for værdier, benefits osv.
-
-### Button Styles
-
-#### Primary Button
-```html
-<a href="#" class="btn-main">Tekst</a>
-```
-- Blå baggrund (#1D61FF)
-- Hvid tekst
-- Padding: 15px 35px
-
-#### Secondary Button
-```html
-<a href="#" class="btn-cta">Tekst</a>
-```
-- Hvid baggrund
-- Blå tekst
-- Bruges i CTA sektion
-
----
-
-## 📄 SIDE-STRUKTUR
+##  SIDE-STRUKTUR
 
 ### Alle 8 Sider Følger Samme Template
 
@@ -202,63 +115,11 @@ Bruges for værdier, benefits osv.
 </main>
 
 <footer>...</footer>
-
-<script>toggleMenu()...</script>
 ```
-
-### Sideliste
-
-1. **index.html** - Forside
-   - Hero banner
-   - 3 feature cards
-   - About teaser
-   - CTA
-
-2. **om-os.html** - Om klubben
-   - Hero
-   - Mission statement
-   - 4 value cards
-   - Historik/timeline
-   - Stats
-
-3. **hold.html** - Hold
-   - Hero
-   - Team showcase
-   - Team info sections
-   - Stats cards
-
-4. **traening.html** - Træning
-   - Hero with gradient
-   - Training grid
-   - Info/CTA flex
-   - Map
-   - Checklist
-
-5. **kampe.html** - Kampe
-   - Hero
-   - 3 match cards
-   - CTA
-
-6. **nyheder.html** - Nyheder
-   - Hero
-   - News articles (event-cards)
-   - CTA
-
-7. **bliv-medlem.html** - Medlemskab
-   - Hero
-   - 3 pricing tier cards
-   - 4-step process
-   - CTA
-
-8. **kontakt.html** - Kontakt
-   - Hero
-   - 3 contact info cards
-   - Contact form with validation
-   - CTA
 
 ---
 
-## 🎨 CSS FILER
+##  CSS FILER
 
 ### css/layout.css
 **Ansvar**: Layout struktur, grid, flexbox, responsive
@@ -306,7 +167,7 @@ Bruges for værdier, benefits osv.
 
 ---
 
-## 💻 JAVASCRIPT
+##  JAVASCRIPT
 
 ### toggleMenu() Function
 ```javascript
@@ -333,7 +194,7 @@ menuLinks.forEach(link => {
 
 ---
 
-## 🔗 NAVIGATION STRUKTUR
+##  NAVIGATION STRUKTUR
 
 Alle 8 sider linket i header navigation:
 
@@ -352,7 +213,7 @@ Alle kontakt-links peger på **kontakt.html** (ikke kontakt-os.html).
 
 ---
 
-## 📊 FARVE PALET
+##  FARVE PALET
 
 ### CSS Variabler (:root)
 ```css
@@ -367,7 +228,7 @@ Alle kontakt-links peger på **kontakt.html** (ikke kontakt-os.html).
 
 ---
 
-## ✅ BEST PRACTICES
+##  BEST PRACTICES
 
 ### HTML
 - Semantisk markup
@@ -383,12 +244,6 @@ Alle kontakt-links peger på **kontakt.html** (ikke kontakt-os.html).
 - BEM notation (valgfrit)
 - Organized sections
 
-### JavaScript
-- Minimal kode
-- Beskrivende funktions-navne
-- Event listeners (ikke inline onclick)
-- JSDoc comments
-
 ### Responsive Design
 - Min-width media queries (mobile-first)
 - Touch-friendly (min. 44x44px)
@@ -397,7 +252,7 @@ Alle kontakt-links peger på **kontakt.html** (ikke kontakt-os.html).
 
 ---
 
-## 🚀 DEPLOYMENT CHECKLIST
+##  DEPLOYMENT CHECKLIST
 
 - [ ] Alle links checker
 - [ ] Alt-tekster på alle billeder
@@ -412,8 +267,6 @@ Alle kontakt-links peger på **kontakt.html** (ikke kontakt-os.html).
 
 ---
 
-## 📈 FREMTIDIGT POTENTIALE
-
 ### Muligheder for forbedring
 - [ ] Backend for kontakt form (email-service)
 - [ ] Database for medlemmer
@@ -423,19 +276,6 @@ Alle kontakt-links peger på **kontakt.html** (ikke kontakt-os.html).
 - [ ] Blog for nyheder
 - [ ] Email newsletter
 - [ ] Analytics integration
-
-### Performance
-- [ ] CSS minification
-- [ ] JavaScript bundling
-- [ ] Image optimization
-- [ ] Caching strategy
-- [ ] CDN setup
-
-### Accessibility
-- [ ] WCAG AA compliance
-- [ ] Screen reader testing
-- [ ] Keyboard navigation
-- [ ] Color contrast audit
 
 ---
 

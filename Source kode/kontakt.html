@@ -29,12 +29,13 @@
                 <span>Aalborg Ultimate</span>
             </div>
             
-            <!-- Hamburger Menu Button (mobil) -->
-            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Åbn navigation menu">
+            <!-- Hamburger Menu Toggle (mobil) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+            <label for="menu-toggle" class="menu-toggle-label" aria-label="Åbn navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </button>
+            </label>
             
             <!-- Navigation -->
             <nav id="mobile-menu">
@@ -159,19 +160,7 @@
         </div>
     </footer>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('menu-active');
-        }
 
-        const menuLinks = document.querySelectorAll('#mobile-menu a');
-        menuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('mobile-menu').classList.remove('menu-active');
-            });
-        });
-    </script>
 
 </body>
 </html>

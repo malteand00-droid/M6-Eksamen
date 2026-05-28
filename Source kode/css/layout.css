@@ -91,21 +91,28 @@ nav ul {
 }
 
 /**
- * Hamburger Menu Button: Vises kun på mobil (< 768px)
- * Tre horisontale linjer som toggle button
+ * Hamburger Menu Checkbox: Skjult checkbox for menu toggle
+ * CSS håndterer vist/skjult baseret på :checked state
  */
-.menu-toggle {
+.menu-toggle-checkbox {
+    display: none;
+}
+
+/**
+ * Hamburger Menu Label: Styling for menu toggle button
+ * Tre horisontale linjer som toggle knap
+ */
+.menu-toggle-label {
     display: none;
     background: none;
     border: none;
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
+    padding: 0;
 }
 
-.menu-toggle span {
+.menu-toggle-label span {
     display: block;
     width: 25px;
     height: 3px;
@@ -839,12 +846,14 @@ nav {
     }
 
     /* Show hamburger menu on mobile */
-    .menu-toggle {
+    .menu-toggle-label {
         display: flex;
         margin-left: auto;
+        flex-direction: column;
+        gap: 5px;
     }
 
-    /* Navigation - skjult på mobil, vises når menu-active */
+    /* Navigation - skjult på mobil, vises når checkbox er checked */
     nav {
         display: none;
         position: absolute;
@@ -858,7 +867,8 @@ nav {
         z-index: 1000;
     }
 
-    nav.menu-active {
+    /* Vis menu når checkbox er checked */
+    .menu-toggle-checkbox:checked ~ nav {
         display: flex;
     }
 
