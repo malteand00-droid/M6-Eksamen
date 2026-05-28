@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
+    <!-- ============================================================
+         META & DOKUMENTINFORMATION
+         ============================================================ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside - Aalborg Ultimate Frisbee Klub</title>
+    <meta name="description" content="Om Aalborg Ultimate Frisbee Klub - Lær om vores mission, værdier og historie">
+    <meta name="keywords" content="ultimate frisbee, klub, Aalborg, mission, værdier">
     
+    <title>Om Klubben - Aalborg Ultimate Frisbee Klub</title>
+    
+    <!-- ============================================================
+         STYLESHEETS
+         ============================================================ -->
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <!-- ============================================================
+         HEADER / NAVIGATION
+         ============================================================ -->
     <header class="main-header">
         <div class="container">
+            <!-- Logo -->
             <div class="logo">
-                <img src="img/logo.png" alt="AUFK Logo">
+                <img src="img/logo.png" alt="AUFK Logo - Aalborg Ultimate Frisbee Klub">
                 <span>Aalborg Ultimate</span>
             </div>
-            <button class="menu-toggle" onclick="toggleMenu()">
+            
+            <!-- Hamburger Menu Button (mobil) -->
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Åbn navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
+            
+            <!-- Navigation -->
             <nav id="mobile-menu">
                 <ul>
                     <li><a href="index.html">Forside</a></li>
@@ -35,6 +51,10 @@
             </nav>
         </div>
     </header>
+
+    <!-- ============================================================
+         MAIN CONTENT
+         ============================================================ -->
 
     <main>
         <section class="hero hero-about">

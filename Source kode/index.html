@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
+    <!-- ============================================================
+         META & DOKUMENTINFORMATION
+         ============================================================ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aalborg Ultimate Frisbee Klub - Danmarks mest dynamiske ultimate frisbee fællesskab">
+    <meta name="keywords" content="ultimate frisbee, klub, Aalborg, sport, fællesskab">
+    
     <title>Forside - Aalborg Ultimate Frisbee Klub</title>
     
+    <!-- ============================================================
+         STYLESHEETS
+         ============================================================ -->
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <!-- ============================================================
+         HEADER / NAVIGATION
+         ============================================================ -->
     <header class="main-header">
         <div class="container">
+            <!-- Logo -->
             <div class="logo">
-                <img src="img/logo.png" alt="AUFK Logo">
+                <img src="img/logo.png" alt="AUFK Logo - Aalborg Ultimate Frisbee Klub">
                 <span>Aalborg Ultimate</span>
             </div>
-            <button class="menu-toggle" onclick="toggleMenu()">
+            
+            <!-- Hamburger Menu Button (mobil) -->
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Åbn navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
+            
+            <!-- Navigation -->
             <nav id="mobile-menu">
                 <ul>
                     <li><a href="index.html">Forside</a></li>
@@ -36,7 +52,11 @@
         </div>
     </header>
 
+    <!-- ============================================================
+         MAIN CONTENT
+         ============================================================ -->
     <main>
+        <!-- Hero Section / Banner -->
         <section class="hero">
             <div class="container hero-content">
                 <h1>Aalborg Ultimate Frisbee Klub</h1>
@@ -45,14 +65,128 @@
             </div>
         </section>
 
+        <!-- Features Section: Hvorfor vælge os -->
         <section class="features page-section">
             <div class="container">
                 <h2 class="section-title">Hvorfor Vælge Os?</h2>
                 <div class="feature-grid">
+                    <!-- Feature Card 1 -->
                     <div class="feature-card">
                         <img src="img/icon-user.png" alt="Fællesskab" class="icon">
                         <h3>Fællesskab</h3>
                         <p>Vær en del af et aktivt og socialt fællesskab med spillere i alle aldre og niveauer</p>
+                    </div>
+                    
+                    <!-- Feature Card 2 -->
+                    <div class="feature-card">
+                        <img src="img/icon-calendar.png" alt="Træning" class="icon">
+                        <h3>Regelmæssig Træning</h3>
+                        <p>Træning to gange om ugen for både begyndere og erfarne spillere</p>
+                    </div>
+                    
+                    <!-- Feature Card 3 -->
+                    <div class="feature-card">
+                        <img src="img/icon-trophy.png" alt="Turneringer" class="icon">
+                        <h3>Turneringer</h3>
+                        <p>Deltag i lokale og internationale turneringer med klubben</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Teaser: Om Klubben -->
+        <section class="about-teaser page-section bg-light">
+            <div class="container about-flex">
+                <!-- Tekst -->
+                <div class="about-text">
+                    <h2>Om Aalborg Ultimate</h2>
+                    <p>Aalborg Ultimate Frisbee Klub blev grundlagt i 2010 og har siden udviklet sig til at være en af Nordjyllands førende ultimate frisbee klubber. Vi tilbyder træning for alle niveauer, fra begyndere til erfarne spillere.</p>
+                    <p>Ultimate frisbee er en holdbaseret sport, der kombinerer hastighed, strategi og atletik. Sporten er kendt for sin "Spirit of the Game" - et unikt aspekt hvor fair play og respekt for modstanderen er i centrum.</p>
+                    <a href="om-os.html" class="link-arrow">Læs mere om os &rarr;</a>
+                </div>
+                
+                <!-- Billede -->
+                <div class="about-image">
+                    <img src="img/team-photo.jpg" alt="Aalborg Ultimate Holdbillede fra træning">
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section: Call-to-Action -->
+        <section class="cta-section">
+            <div class="container cta-content">
+                <h2>Klar til at blive medlem?</h2>
+                <p>Slut dig til Danmark mest dynamiske ultimate frisbee klub</p>
+                <a href="bliv-medlem.html" class="btn-cta">Tilmeld dig nu</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="main-footer">
+        <div class="container">
+            <!-- Footer Grid: 3 kolonner -->
+            <div class="footer-grid">
+                <!-- Kolonne 1: Om klubben -->
+                <div class="footer-col">
+                    <h3>Om Klubben</h3>
+                    <p>Aalborg Ultimate Frisbee Klub - Danmarks mest dynamiske fællesskab for ultimate frisbee.</p>
+                </div>
+                
+                <!-- Kolonne 2: Genveje -->
+                <div class="footer-col">
+                    <h3>Genveje</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="index.html">Forside</a></li>
+                        <li><a href="om-os.html">Om Klubben</a></li>
+                        <li><a href="traening.html">Træning</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Kolonne 3: Kontakt -->
+                <div class="footer-col">
+                    <h3>Kontakt</h3>
+                    <p>Email: info@aufk.dk</p>
+                    <p>Telefon: +45 XX XX XX XX</p>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom: Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aalborg Ultimate Frisbee Klub. Alle rettigheder forbeholdt.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+         JAVASCRIPT - MOBIL MENU TOGGLE
+         ============================================================ -->
+    <script>
+        /**
+         * toggleMenu() - Åbner/lukker mobil navigation
+         * Toggles klassen "menu-active" på nav elementet
+         */
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('menu-active');
+        }
+
+        /**
+         * Auto-luk menu når link klikkes
+         * Gør det nemmere at navigere på mobil
+         */
+        const menuLinks = document.querySelectorAll('#mobile-menu a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.remove('menu-active');
+            });
+        });
+    </script>
+
+</body>
+</html>
                     </div>
                     <div class="feature-card">
                         <img src="img/icon-calendar.png" alt="Træning" class="icon">

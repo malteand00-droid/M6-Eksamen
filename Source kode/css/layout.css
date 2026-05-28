@@ -1,5 +1,32 @@
-/* --- 1. GLOBAL RESET --- */
-/* Sørger for at alle browsere starter ens uden mærkelige mellemrum */
+/**
+ * ============================================================
+ * AALBORG ULTIMATE FRISBEE KLUB - LAYOUT STYLESHEET
+ * ============================================================
+ * 
+ * Struktur:
+ * 1. Global Reset & Base Styles
+ * 2. Container (centering & max-width)
+ * 3. Header & Navigation
+ * 4. Hero Section
+ * 5. Page Content & Sections
+ * 6. Grids (Feature, Event, Values, etc.)
+ * 7. Footer
+ * 8. Responsive Design (Media Queries)
+ * 
+ * Breakpoints:
+ * - Desktop: 769px+
+ * - Tablet: 481px - 768px
+ * - Mobil: 480px og under
+ */
+
+/* ============================================================
+   1. GLOBAL RESET & BASE STYLES
+   ============================================================ */
+
+/**
+ * Box-sizing: Alle elementer includer padding/border i width/height
+ * Margin/Padding: Reset til 0 for at undgå browser defaults
+ */
 * {
     margin: 0;
     padding: 0;
@@ -7,37 +34,427 @@
 }
 
 body {
-    font-family: sans-serif; /* Midlertidig font indtil style.css tager over */
+    font-family: sans-serif;
     line-height: 1.6;
     color: #333;
 }
 
-/* --- 2. CONTAINEREN (Vigtigst!) --- */
-/* Holder alt indhold samlet på midten, så det ikke klistrer til skærmkanten */
+/* ============================================================
+   2. CONTAINER - CENTERERING & MAX-WIDTH
+   ============================================================ */
+
+/**
+ * Container: Holder alt indhold samlet på midten med max-width
+ * Bruges rundt omkring alle sektioner for konsistent spacing
+ */
 .container {
-    max-width: 1200px; /* Bredden på dit design-hus */
-    margin: 0 auto;    /* Centrerer kassen på midten af skærmen */
-    padding: 0 20px;   /* Lidt luft i siderne på mobil */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* --- 3. HEADER / MENU LAYOUT --- */
+/* ============================================================
+   3. HEADER & NAVIGATION
+   ============================================================ */
+
+/**
+ * Main Header: Flex layout med logo til venstre, nav til højre
+ */
 .main-header .container {
-    display: flex;             /* MAGI: Stiller logo og nav ved siden af hinanden */
-    justify-content: space-between; /* Skubber logo til venstre, nav til højre */
-    align-items: center;       /* Sørger for de er lige høje i midten */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px 20px;
 }
 
+/**
+ * Logo: Kombinerer billede + tekst horisontalt
+ */
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px; /* Mellemrum mellem logo-ikon og tekst */
+    gap: 12px;
+}
+
+/**
+ * Navigation: Horisontale menulinks på desktop
+ */
+nav {
+    display: flex;
+    align-items: center;
 }
 
 nav ul {
-    display: flex;     /* Stiller menupunkterne på en række */
-    gap: 25px;         /* Mellemrum mellem Forside, Om os, osv. */
-    list-style: none;  /* Fjerner de sorte prikker */
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+/**
+ * Hamburger Menu Button: Vises kun på mobil (< 768px)
+ * Tre horisontale linjer som toggle button
+ */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* ============================================================
+   4. HERO SECTION
+   ============================================================ */
+
+/**
+ * Hero: Full-height banner med centered content
+ * Fyldes med baggrundsbillede eller gradient
+ */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 80vh;
+    padding: 100px 0;
+}
+
+/**
+ * Hero Content: Centreret kolonne med tekst
+ */
+.hero-content {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ============================================================
+   5. PAGE CONTENT & SECTIONS
+   ============================================================ */
+
+/**
+ * Page Section: Standard spacing for alle indholds-sektioner
+ */
+.page-section {
+    padding: 80px 0;
+}
+
+/**
+ * CTA Section: Call-to-Action bokse (blå baggrund)
+ */
+.cta-section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ============================================================
+   6. GRIDS & LAYOUTS
+   ============================================================ */
+
+/**
+ * Feature Grid: 3 kolonne layout for "Hvorfor vælge os" kort
+ */
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/**
+ * About Flex: Tekst til venstre, billede til højre
+ */
+.about-flex {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-text, .about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    display: block;
+}
+
+/**
+ * Event Grid: Kort i en row (responsivt antal)
+ */
+.event-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.event-card {
+    flex: 1;
+    padding: 30px;
+}
+
+/* ============================================================
+   7. FOOTER
+   ============================================================ */
+
+/**
+ * Main Footer: Dark section med 3 kolonne grid
+ */
+.main-footer {
+    padding: 80px 0 20px 0;
+}
+
+/**
+ * Footer Grid: 3 ligeligt fordelt kolonner
+ */
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+/**
+ * Footer Bottom: Centered copyright text
+ */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ============================================================
+   8. RESPONSIVE DESIGN - MEDIA QUERIES
+   ============================================================ */
+
+/**
+ * TABLET & MINDRE (768px og under)
+ * 
+ * Ændringer:
+ * - Hamburger menu vises
+ * - Navigation bliver dropdown
+ * - Grids stables vertikalt
+ * - Mindre padding/spacing
+ */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Header stables vertikalt med hamburger */
+    .main-header .container {
+        flex-direction: row;
+        gap: 15px;
+        padding: 12px 15px;
+        position: relative;
+    }
+
+    /* Hamburger menu button vises */
+    .menu-toggle {
+        display: flex;
+        margin-left: auto;
+    }
+
+    /* Navigation bliver dropdown menu */
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1D61FF;
+        padding: 20px 15px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    /* Vises når .menu-active class tilføjes */
+    nav.menu-active {
+        display: flex;
+    }
+
+    /* Menulinks stables vertikalt */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+        padding: 10px 0;
+        display: block;
+    }
+
+    /* Hero mindre på tablet */
+    .hero {
+        min-height: 50vh;
+        padding: 50px 0;
+    }
+
+    .hero-content {
+        gap: 15px;
+    }
+
+    /* Grids stables på tablet */
+    .feature-grid {
+        flex-direction: column;
+        gap: 20px;
+        max-width: 100%;
+    }
+
+    .feature-card {
+        padding: 30px 20px;
+    }
+
+    /* About layout bliver stacked */
+    .about-flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-text, .about-image {
+        flex: none;
+        width: 100%;
+    }
+
+    /* Event cards - en kolonne */
+    .event-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .event-card {
+        padding: 20px;
+    }
+
+    /* Footer grid stables */
+    .footer-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Reduceret padding på sections */
+    .page-section {
+        padding: 50px 0;
+    }
+
+    .cta-section {
+        padding: 50px 0;
+    }
+
+    .main-footer {
+        padding: 50px 0 20px 0;
+    }
+
+    /* Knapper bliver touch-venlige */
+    .btn-main, .btn-cta {
+        min-height: 44px;
+        min-width: 44px;
+        padding: 12px 25px;
+    }
+}
+
+/**
+ * LILLE MOBIL (480px og under)
+ * 
+ * Ændringer:
+ * - Minimal padding
+ * - Endnu mindre grids
+ * - Kompakt spacing
+ */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    .main-header .container {
+        padding: 12px 12px;
+    }
+
+    /* Hero helt minimalt */
+    .hero {
+        min-height: 40vh;
+        padding: 30px 0;
+    }
+
+    .hero-content {
+        gap: 12px;
+    }
+
+    /* Cards med mindre padding */
+    .feature-card {
+        padding: 20px 15px;
+    }
+
+    /* About helt tæt */
+    .about-flex {
+        gap: 20px;
+    }
+
+    /* Event cards helt minimal */
+    .event-card {
+        padding: 15px;
+    }
+
+    /* Sections helt minimal padding */
+    .page-section {
+        padding: 30px 0;
+    }
+
+    .cta-section {
+        padding: 30px 0;
+    }
+
+    .main-footer {
+        padding: 30px 0 15px 0;
+    }
+
+    .footer-grid {
+        gap: 15px;
+    }
 }
 
 /* --- 4. HERO (TOPBILLEDE) LAYOUT --- */
