@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside - Aalborg Ultimate Frisbee Klub</title>
+    <meta name="description" content="Lær mere om Aalborg Ultimate Frisbee Klub – vores mission, værdier og historie siden 2010.">
+    <title>Om Os - Aalborg Ultimate Frisbee Klub</title>
     
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/layout-refactored.css">
+    <link rel="stylesheet" href="css/style-refactored.css">
 </head>
 <body>
+    <a href="#indhold" class="skip-link">Spring til indhold</a>
 
     <header class="main-header">
         <div class="container">
@@ -19,7 +22,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Forside</a></li>
-                    <li><a href="om-os.html">Om Klubben</a></li>
+                    <li><a href="om-os.html" aria-current="page">Om Klubben</a></li>
                     <li><a href="hold.html">Hold</a></li>
                     <li><a href="traening.html">Træning</a></li>
                     <li><a href="kampe.html">Kampe</a></li>
@@ -31,7 +34,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="indhold">
         <section class="hero hero-about">
             <div class="container hero-content">
                 <h1>Om Os</h1>
@@ -52,22 +55,22 @@
             <div class="container">
                 <h2 class="section-title">Vores Værdier</h2>
                 <div class="values-grid">
-                    <div class="value-card">
+                    <div class="card card--value">
                         <img src="img/heart.png" alt="Heart" class="icon">
                         <h3>Spirit of the Game</h3>
                         <p>Vi værdsætter fair play og respekt højt. Ultimate frisbee er selvdømmende, hvilket fremmer ansvarlighed og integritet.</p>
                     </div>
-                    <div class="value-card">
+                    <div class="card card--value">
                         <img src="img/icon-user.png" alt="Fællesskab" class="icon">
                         <h3>Fællesskab</h3>
                         <p>Hos os handler det ikke kun om sporten - det handler om at skabe varige venskaber og et stærkt socialt netværk.</p>
                     </div>
-                    <div class="value-card">
+                    <div class="card card--value">
                         <img src="img/target.png" alt="Udvikling" class="icon">
                         <h3>Udvikling</h3>
                         <p>Vi støtter alle spillere i deres udvikling, uanset om du er begynder eller erfaren. Der er plads til alle.</p>
                     </div>
-                    <div class="value-card">
+                    <div class="card card--value">
                         <img src="img/award.png" alt="Excellence" class="icon">
                         <h3>Excellence</h3>
                         <p>Vi stræber efter at være den bedste version af os selv, både på og uden for banen.</p>
@@ -162,7 +165,7 @@
         <div class="container cta-content">
             <h2>Klar til at Komme i Gang?</h2>
             <p>Kom til en gratis prøvetræning og oplev ultimate frisbee</p>
-            <a href="kontakt-os.html" class="btn-cta">Kontakt Os &rarr;</a>
+            <a href="kontakt-os.html" class="btn btn-cta">Kontakt Os &rarr;</a>
         </div>
     </section>
 

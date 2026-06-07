@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside - Aalborg Ultimate Frisbee Klub</title>
+    <meta name="description" content="Kontakt Aalborg Ultimate Frisbee Klub – email, telefon, adresse og bestyrelsen.">
+    <title>Kontakt Os - Aalborg Ultimate Frisbee Klub</title>
     
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/layout-refactored.css">
+    <link rel="stylesheet" href="css/style-refactored.css">
 </head>
 <body>
+    <a href="#indhold" class="skip-link">Spring til indhold</a>
 
     <header class="main-header">
         <div class="container">
@@ -25,14 +28,14 @@
                     <li><a href="kampe.html">Kampe</a></li>
                     <li><a href="nyheder.html">Nyheder</a></li>
                     <li><a href="bliv-medlem.html">Bliv Medlem</a></li>
-                    <li><a href="kontakt-os.html">Kontakt</a></li>
+                    <li><a href="kontakt-os.html" aria-current="page">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-  <main>
-    <section class="hero subpage-hero hero-nyheder">
+  <main id="indhold">
+    <section class="hero hero-nyheder">
         <div class="container hero-content text-left">
             <h1>Kontakt Os</h1>
             <p>Vi er altid klar til at besvare dine spørgsmål. Kontakt os i dag!</p>
@@ -72,15 +75,15 @@
                 <form action="#" method="POST">
                     <div class="form-group">
                         <label for="kontakt-navn">Navn *</label>
-                        <input type="text" id="kontakt-navn" required>
+                        <input type="text" id="kontakt-navn" name="navn" required>
                     </div>
                     <div class="form-group">
                         <label for="kontakt-email">Email *</label>
-                        <input type="email" id="kontakt-email" required>
+                        <input type="email" id="kontakt-email" name="email" required>
                     </div>
                     <div class="form-group">
                         <label for="kontakt-emne">Emne *</label>
-                        <select id="kontakt-emne" required>
+                        <select id="kontakt-emne" name="emne" required>
                             <option value="">Vælg emne</option>
                             <option value="indmeldelse">Spørgsmål til indmeldelse</option>
                             <option value="kamp">Kampe og turneringer</option>
@@ -89,9 +92,9 @@
                     </div>
                     <div class="form-group">
                         <label for="kontakt-besked">Besked *</label>
-                        <textarea id="kontakt-besked" rows="6" required></textarea>
+                        <textarea id="kontakt-besked" name="besked" rows="6" required></textarea>
                     </div>
-                    <button type="submit" class="btn-main btn-full"><i class="fa-regular fa-paper-plane"></i> Send Besked</button>
+                    <button type="submit" class="btn btn-main btn-full"><i class="fa-regular fa-paper-plane"></i> Send Besked</button>
                 </form>
             </div>
 
@@ -123,13 +126,20 @@
                     <div class="board-member">
                         <h4>Lisa Thomsen</h4>
                         <span>Sekretær</span>
-                        <a href="mailto:sekretaer@aalborg
+                        <a href="mailto:sekretaer@aalborgultimate.dk">sekretaer@aalborgultimate.dk</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
 
     <section class="cta-section">
         <div class="container cta-content">
             <h2>Klar til at Komme i Gang?</h2>
             <p>Kom til en gratis prøvetræning og oplev ultimate frisbee</p>
-            <a href="kontakt-os.html" class="btn-cta">Kontakt Os &rarr;</a>
+            <a href="kontakt-os.html" class="btn btn-cta">Kontakt Os &rarr;</a>
         </div>
     </section>
 

@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside - Aalborg Ultimate Frisbee Klub</title>
+    <meta name="description" content="Seneste nyheder fra Aalborg Ultimate Frisbee Klub – resultater, træning, turneringer og medlemmer.">
+    <title>Nyheder - Aalborg Ultimate Frisbee Klub</title>
     
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/layout-refactored.css">
+    <link rel="stylesheet" href="css/style-refactored.css">
 </head>
 <body>
+    <a href="#indhold" class="skip-link">Spring til indhold</a>
 
     <header class="main-header">
         <div class="container">
@@ -23,7 +26,7 @@
                     <li><a href="hold.html">Hold</a></li>
                     <li><a href="traening.html">Træning</a></li>
                     <li><a href="kampe.html">Kampe</a></li>
-                    <li><a href="nyheder.html">Nyheder</a></li>
+                    <li><a href="nyheder.html" aria-current="page">Nyheder</a></li>
                     <li><a href="bliv-medlem.html">Bliv Medlem</a></li>
                     <li><a href="kontakt-os.html">Kontakt</a></li>
                 </ul>
@@ -31,8 +34,8 @@
         </div>
     </header>
 
- <main>
-    <section class="hero subpage-hero hero-nyheder">
+ <main id="indhold">
+    <section class="hero hero-nyheder">
         <div class="container hero-content text-left">
             <h1>Nyheder</h1>
             <p>Hold dig opdateret med de seneste nyheder fra Aalborg Ultimate Frisbee Klub</p>
@@ -43,12 +46,12 @@
         <div class="container">
             
             <div class="filter-bar">
-                <button class="filter-btn active">Alle</button>
-                <button class="filter-btn">Resultater</button>
-                <button class="filter-btn">Træning</button>
-                <button class="filter-btn">Turnering</button>
-                <button class="filter-btn">Medlemmer</button>
-                <button class="filter-btn">Klub</button>
+                <button type="button" class="filter-btn active">Alle</button>
+                <button type="button" class="filter-btn">Resultater</button>
+                <button type="button" class="filter-btn">Træning</button>
+                <button type="button" class="filter-btn">Turnering</button>
+                <button type="button" class="filter-btn">Medlemmer</button>
+                <button type="button" class="filter-btn">Klub</button>
             </div>
 
             <div class="news-grid">
@@ -116,7 +119,7 @@
         <div class="container cta-content">
             <h2>Klar til at Komme i Gang?</h2>
             <p>Kom til en gratis prøvetræning og oplev ultimate frisbee</p>
-            <a href="kontakt-os.html" class="btn-cta">Kontakt Os &rarr;</a>
+            <a href="kontakt-os.html" class="btn btn-cta">Kontakt Os &rarr;</a>
         </div>
     </section>
 

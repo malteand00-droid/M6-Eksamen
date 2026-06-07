@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aalborg Ultimate Frisbee Klub – Danmarks mest dynamiske ultimate frisbee fællesskab. Træning for alle niveauer i Aalborg.">
     <title>Forside - Aalborg Ultimate Frisbee Klub</title>
     
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/layout-refactored.css">
+    <link rel="stylesheet" href="css/style-refactored.css">
 </head>
 <body>
+    <a href="#indhold" class="skip-link">Spring til indhold</a>
 
     <header class="main-header">
         <div class="container">
@@ -18,7 +21,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="index.html" aria-current="page">Forside</a></li>
                     <li><a href="om-os.html">Om Klubben</a></li>
                     <li><a href="hold.html">Hold</a></li>
                     <li><a href="traening.html">Træning</a></li>
@@ -31,12 +34,12 @@
         </div>
     </header>
 
-    <main>
+    <main id="indhold">
         <section class="hero">
             <div class="container hero-content">
                 <h1>Aalborg Ultimate Frisbee Klub</h1>
                 <p>Danmarks mest dynamiske ultimate frisbee fællesskab</p>
-                <a href="bliv-medlem.html" class="btn-main">Bliv Medlem &rarr;</a>
+                <a href="bliv-medlem.html" class="btn btn-main">Bliv Medlem &rarr;</a>
             </div>
         </section>
 
@@ -44,17 +47,17 @@
             <div class="container">
                 <h2 class="section-title">Hvorfor Vælge Os?</h2>
                 <div class="feature-grid">
-                    <div class="feature-card">
+                    <div class="card card--feature">
                         <img src="img/icon-user.png" alt="Fællesskab" class="icon">
                         <h3>Fællesskab</h3>
                         <p>Vær en del af et aktivt og socialt fællesskab med spillere i alle aldre og niveauer</p>
                     </div>
-                    <div class="feature-card">
+                    <div class="card card--feature">
                         <img src="img/icon-calendar.png" alt="Træning" class="icon">
                         <h3>Regelmæssig Træning</h3>
                         <p>Træning to gange om ugen for både begyndere og erfarne spillere</p>
                     </div>
-                    <div class="feature-card">
+                    <div class="card card--feature">
                         <img src="img/icon-trophy.png" alt="Turneringer" class="icon">
                         <h3>Turneringer</h3>
                         <p>Deltag i lokale og internationale turneringer med klubben</p>
@@ -81,17 +84,17 @@
             <div class="container">
                 <h2 class="section-title">Kommende Events</h2>
                 <div class="event-grid">
-                    <div class="event-card">
+                    <div class="card card--event">
                         <span class="event-date">29 Mar</span>
                         <h3>Nybegynder Træning</h3>
                         <p>Særlig træning for nye spillere</p>
                     </div>
-                    <div class="event-card">
+                    <div class="card card--event">
                         <span class="event-date">5 Apr</span>
                         <h3>Forårsturnering</h3>
                         <p>Lokal turnering i Aalborg</p>
                     </div>
-                    <div class="event-card">
+                    <div class="card card--event">
                         <span class="event-date">12 Apr</span>
                         <h3>Social Event</h3>
                         <p>Grillaften på klubhuset</p>
@@ -105,7 +108,7 @@
         <div class="container cta-content">
             <h2>Klar til at Komme i Gang?</h2>
             <p>Kom til en gratis prøvetræning og oplev ultimate frisbee</p>
-            <a href="kontakt-os.html" class="btn-cta">Kontakt Os &rarr;</a>
+            <a href="kontakt-os.html" class="btn btn-cta">Kontakt Os &rarr;</a>
         </div>
     </section>
 

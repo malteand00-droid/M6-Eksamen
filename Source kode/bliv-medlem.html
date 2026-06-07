@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside - Aalborg Ultimate Frisbee Klub</title>
+    <meta name="description" content="Bliv medlem af Aalborg Ultimate Frisbee Klub. Se medlemskaber og priser, og tilmeld dig i dag.">
+    <title>Bliv Medlem - Aalborg Ultimate Frisbee Klub</title>
     
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/layout-refactored.css">
+    <link rel="stylesheet" href="css/style-refactored.css">
 </head>
 <body>
+    <a href="#indhold" class="skip-link">Spring til indhold</a>
 
     <header class="main-header">
         <div class="container">
@@ -24,15 +27,15 @@
                     <li><a href="traening.html">Træning</a></li>
                     <li><a href="kampe.html">Kampe</a></li>
                     <li><a href="nyheder.html">Nyheder</a></li>
-                    <li><a href="bliv-medlem.html">Bliv Medlem</a></li>
+                    <li><a href="bliv-medlem.html" aria-current="page">Bliv Medlem</a></li>
                     <li><a href="kontakt-os.html">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
- <main>
-    <section class="hero subpage-hero hero-nyheder">
+ <main id="indhold">
+    <section class="hero hero-medlem">
         <div class="container hero-content text-center">
             <h1>Bliv Medlem</h1>
             <p>Bliv en del af Aalborg Ultimate og oplev Danmarks mest sociale frisbeeklub</p>
@@ -129,32 +132,32 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="fornavn">Fornavn *</label>
-                            <input type="text" id="fornavn" required>
+                            <input type="text" id="fornavn" name="fornavn" required>
                         </div>
                         <div class="form-group">
                             <label for="efternavn">Efternavn *</label>
-                            <input type="text" id="efternavn" required>
+                            <input type="text" id="efternavn" name="efternavn" required>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email *</label>
-                        <input type="email" id="email" required>
+                        <input type="email" id="email" name="email" required>
                     </div>
 
                     <div class="form-group">
                         <label for="telefon">Telefon *</label>
-                        <input type="tel" id="telefon" required>
+                        <input type="tel" id="telefon" name="telefon" required>
                     </div>
 
                     <div class="form-group">
                         <label for="dato">Fødselsdato *</label>
-                        <input type="date" id="dato" required>
+                        <input type="date" id="dato" name="dato" required>
                     </div>
 
                     <div class="form-group">
                         <label for="type">Medlemskabstype *</label>
-                        <select id="type" required>
+                        <select id="type" name="type" required>
                             <option value="">Vælg medlemskab</option>
                             <option value="junior">Junior</option>
                             <option value="recreational">Recreational</option>
@@ -164,7 +167,7 @@
 
                     <div class="form-group">
                         <label for="niveau">Tidligere erfaring med ultimate frisbee *</label>
-                        <select id="niveau" required>
+                        <select id="niveau" name="niveau" required>
                             <option value="">Vælg niveau</option>
                             <option value="nybegynder">Nybegynder</option>
                             <option value="letøvet">Letøvet</option>
@@ -174,15 +177,15 @@
 
                     <div class="form-group">
                         <label for="besked">Besked til klubben (valgfri)</label>
-                        <textarea id="besked" rows="4"></textarea>
+                        <textarea id="besked" name="besked" rows="4"></textarea>
                     </div>
 
                     <div class="form-checkbox">
-                        <input type="checkbox" id="betingelser" required>
+                        <input type="checkbox" id="betingelser" name="betingelser" required>
                         <label for="betingelser">Jeg accepterer klubbens vedtægter og betingelser *</label>
                     </div>
 
-                    <button type="submit" class="btn-main" style="margin-top: 20px;">Send Tilmelding</button>
+                    <button type="submit" class="btn btn-main mt-20">Send Tilmelding</button>
 
                 </form>
             </div>
@@ -194,7 +197,7 @@
         <div class="container cta-content">
             <h2>Klar til at Komme i Gang?</h2>
             <p>Kom til en gratis prøvetræning og oplev ultimate frisbee</p>
-            <a href="kontakt-os.html" class="btn-cta">Kontakt Os &rarr;</a>
+            <a href="kontakt-os.html" class="btn btn-cta">Kontakt Os &rarr;</a>
         </div>
     </section>
 

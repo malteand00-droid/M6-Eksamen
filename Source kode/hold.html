@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside - Aalborg Ultimate Frisbee Klub</title>
+    <meta name="description" content="Se holdene i Aalborg Ultimate Frisbee Klub – fra nybegynder til elite. Find det hold der passer til dig.">
+    <title>Hold - Aalborg Ultimate Frisbee Klub</title>
     
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/layout-refactored.css">
+    <link rel="stylesheet" href="css/style-refactored.css">
 </head>
 <body>
+    <a href="#indhold" class="skip-link">Spring til indhold</a>
 
     <header class="main-header">
         <div class="container">
@@ -20,7 +23,7 @@
                 <ul>
                     <li><a href="index.html">Forside</a></li>
                     <li><a href="om-os.html">Om Klubben</a></li>
-                    <li><a href="hold.html">Hold</a></li>
+                    <li><a href="hold.html" aria-current="page">Hold</a></li>
                     <li><a href="traening.html">Træning</a></li>
                     <li><a href="kampe.html">Kampe</a></li>
                     <li><a href="nyheder.html">Nyheder</a></li>
@@ -31,8 +34,8 @@
         </div>
     </header>
 
-  <main>
-    <section class="hero subpage-hero-hold">
+  <main id="indhold">
+    <section class="hero hero-hold">
         <div class="container hero-content">
             <h1>Vores Hold</h1>
             <p>Aalborg Ultimate tilbyder hold for alle niveauer – fra nybegynder til elite. Find det hold der passer til dig!</p>
@@ -83,7 +86,7 @@
                     </div>
                 </div>
                 <div class="team-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1544919396-9818833718c2?q=80&w=2070&auto=format&fit=crop" alt="Hygge træning">
+                    <img src="img/team-photo.jpg" alt="Hygge træning">
                 </div>
             </div>
 
@@ -98,7 +101,7 @@
                     </div>
                 </div>
                 <div class="team-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1949&auto=format&fit=crop" alt="Ungdomsholdet">
+                    <img src="img/mandehold.png" alt="Ungdomsholdet">
                 </div>
             </div>
 
@@ -109,17 +112,17 @@
         <div class="container">
             <h2 class="section-title">Vores Resultater</h2>
             <div class="stats-grid">
-                <div class="stat-card">
+                <div class="card card--stat">
                     <img src="img/icon-trophy.png" alt="Pokal" class="icon">
                     <span class="stat-number-small">DM Guld 2024</span>
                     <p>Open holdet vandt DM i mixed ultimate</p>
                 </div>
-                <div class="stat-card">
+                <div class="card card--stat">
                     <img src="img/award.png" alt="Medalje" class="icon">
                     <span class="stat-number-small">Nordjyllandsmestre</span>
                     <p>Regionsmestre 3 år i træk</p>
                 </div>
-                <div class="stat-card">
+                <div class="card card--stat">
                     <img src="img/icon-user.png" alt="Medlemmer" class="icon">
                     <span class="stat-number-small">80+ Medlemmer</span>
                     <p>Aktive spillere på tværs af alle hold</p>
@@ -133,7 +136,7 @@
         <div class="container cta-content">
             <h2>Klar til at Komme i Gang?</h2>
             <p>Kom til en gratis prøvetræning og oplev ultimate frisbee</p>
-            <a href="kontakt-os.html" class="btn-cta">Kontakt Os &rarr;</a>
+            <a href="kontakt-os.html" class="btn btn-cta">Kontakt Os &rarr;</a>
         </div>
     </section>
 
