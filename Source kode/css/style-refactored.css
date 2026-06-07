@@ -957,6 +957,100 @@ nav a:focus {
     color: var(--heading-dark);
 }
 
+/* --- TABELLER (resultater & stilling på kampe-siden) --- */
+th,
+td {
+    padding: var(--spacing-md) var(--spacing-lg);
+    text-align: left;
+}
+
+th {
+    background-color: var(--bg-light);
+    color: var(--heading-dark);
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+}
+
+td {
+    border-top: 1px solid var(--border-light);
+    color: var(--text-gray);
+}
+
+/* Fremhævet række (Aalborg på 1. pladsen) */
+.highlight-row {
+    background-color: var(--bg-light-blue);
+}
+
+.highlight-row td {
+    color: var(--primary-blue);
+    font-weight: bold;
+}
+
+/* --- BESTYRELSE (kontakt-siden) --- */
+.board-section {
+    margin-top: var(--spacing-2xl);
+}
+
+.board-section h3 {
+    margin-bottom: var(--spacing-lg);
+    color: var(--heading-dark);
+}
+
+.board-member {
+    padding: var(--spacing-md) 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.board-member h4 {
+    color: var(--heading-dark);
+    font-size: var(--font-size-base);
+}
+
+.board-member span {
+    display: block;
+    color: var(--text-muted);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-xs);
+}
+
+.board-member a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+}
+
+.board-member a:hover {
+    text-decoration: underline;
+}
+
+/* Mindre kort-placeholder (kontakt-siden) */
+.map-small {
+    height: 220px;
+    padding: var(--spacing-lg);
+}
+
+/* --- CHECKBOX-RÆKKE (medlemsformular) --- */
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.form-checkbox input {
+    width: auto;
+}
+
+.form-checkbox label {
+    font-weight: 500;
+    color: var(--heading-dark);
+}
+
+/* Blå kant-variant til træningskort */
+.border-blue {
+    border-color: var(--primary-blue);
+}
+
 /* --- 11. ACCESSIBILITY IMPROVEMENTS --- */
 /* Focus states for keyboard navigation */
 :focus-visible {
