@@ -350,6 +350,10 @@ nav a:focus {
     background-color: var(--bg-light-blue);
 }
 
+.text-primary {
+    color: var(--primary-blue);
+}
+
 /* --- 10. SPECIALISEREDE KOMPONENTER --- */
 
 /* Timeline styling */
@@ -451,6 +455,26 @@ nav a:focus {
     color: #92400E;
 }
 
+/* Status badges (kampresultater: Sejr / Nederlag) */
+.status-badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-badge.win {
+    background-color: #DCFCE7;
+    color: #166534;
+}
+
+.status-badge.loss {
+    background-color: #FEE2E2;
+    color: #991B1B;
+}
+
 /* Training card (same as card but with specific styling) */
 .training-card {
     background: var(--bg-white);
@@ -478,15 +502,6 @@ nav a:focus {
     margin-bottom: var(--spacing-md);
 }
 
-/* Match card */
-.match-card {
-    background: var(--bg-white);
-    border: 1px solid var(--border-light);
-    border-radius: var(--radius-xl);
-    padding: var(--spacing-xl);
-    box-shadow: var(--shadow-card);
-}
-
 /* Form styling */
 .form-wrapper {
     max-width: 700px;
@@ -495,35 +510,6 @@ nav a:focus {
     padding: var(--spacing-2xl);
     border-radius: var(--radius-xl);
     box-shadow: 0 5px 20px rgba(0,0,0,0.03);
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: var(--spacing-sm);
-    font-weight: 500;
-    color: var(--heading-dark);
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: var(--spacing-md);
-    border: 1px solid var(--border-light);
-    border-radius: var(--radius-md);
-    font-size: var(--font-size-base);
-    font-family: inherit;
-}
-
-.form-group textarea {
-    resize: vertical;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    outline: 2px solid var(--primary-blue);
-    outline-offset: 2px;
 }
 
 /* Contact info card */
@@ -950,11 +936,6 @@ nav a:focus {
 .map-placeholder {
     background-color: var(--bg-placeholder);
     border-radius: var(--radius-xl);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 .map-placeholder i {
